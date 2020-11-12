@@ -82,6 +82,7 @@
             this.Name = "fEditar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fEditar_FormClosing);
             this.Load += new System.EventHandler(this.fEditar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

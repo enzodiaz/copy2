@@ -17,7 +17,7 @@ namespace copy2
         {
             InitializeComponent();
         }
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
             if (txtEditar.Text.Length > 0)
@@ -463,6 +463,12 @@ namespace copy2
                     con.Close();
                     break;
             }
+        }
+
+        private void fEditar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
         }
     }
 }

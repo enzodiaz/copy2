@@ -234,6 +234,189 @@ namespace copy2
 
             }
         }
+        private void buttons_Bind()
+        {
+            SQLiteConnection con = new SQLiteConnection("Data Source=copy.sqlite;Version = 3; Cache = Shared");
+            switch (Globales.num)
+            {
+                case 1:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button1'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 2:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button2'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 3:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button3'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 4:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button4'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 5:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button5'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 6:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button6'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 7:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button7'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 8:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button8'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 9:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button9'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 10:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button10'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 11:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button11'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 12:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button12'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 13:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button13'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 14:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button14'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 15:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button15'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+                case 16:
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT info FROM botones WHERE id_boton='button16'";
+                        string copyText = Convert.ToString(command.ExecuteScalar());
+                        Clipboard.SetText(copyText);
+                    }
+                    con.Close();
+                    break;
+            }
+        }
         private void MenuItemEdit_Click(Object sender, System.EventArgs e)
         {
             fEditar fe = new fEditar();
@@ -414,10 +597,65 @@ namespace copy2
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.A && e.Control)
+            if (e.KeyCode == Keys.F1)
             {
                 Globales.num = 1;
-                buttons_Click("e",e);
+                buttons_Bind();
+            }
+            if (e.KeyCode == Keys.F2)
+            {
+                Globales.num = 2;
+                buttons_Bind();
+            }
+            if (e.KeyCode == Keys.F3)
+            {
+                Globales.num = 3;
+                buttons_Bind();
+            }
+            if (e.KeyCode == Keys.F4)
+            {
+                Globales.num = 4;
+                buttons_Bind();
+            }
+            if (e.KeyCode == Keys.F5)
+            {
+                Globales.num = 5;
+                buttons_Bind();
+            }
+            if (e.KeyCode == Keys.F6)
+            {
+                Globales.num = 6;
+                buttons_Bind();
+            }
+            if (e.KeyCode == Keys.F7)
+            {
+                Globales.num = 7;
+                buttons_Bind();
+            }
+            if (e.KeyCode == Keys.F8)
+            {
+                Globales.num = 8;
+                buttons_Bind();
+            }
+            if (e.KeyCode == Keys.F9)
+            {
+                Globales.num = 9;
+                buttons_Bind();
+            }
+            if (e.KeyCode == Keys.F10)
+            {
+                Globales.num = 10;
+                buttons_Bind();
+            }
+            if (e.KeyCode == Keys.F11)
+            {
+                Globales.num = 11;
+                buttons_Bind();
+            }
+            if (e.KeyCode == Keys.F12)
+            {
+                Globales.num = 12;
+                buttons_Bind();
             }
         }
     }

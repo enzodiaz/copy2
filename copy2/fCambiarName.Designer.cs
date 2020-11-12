@@ -89,6 +89,7 @@
             this.Name = "fCambiarName";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cambiar nombre";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fCambiarName_FormClosing);
             this.Load += new System.EventHandler(this.fCambiarName_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

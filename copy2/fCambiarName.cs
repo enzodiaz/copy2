@@ -263,5 +263,10 @@ namespace copy2
 
         }
 
+        private void fCambiarName_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
     }
 }
