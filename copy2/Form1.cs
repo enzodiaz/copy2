@@ -33,10 +33,6 @@ namespace copy2
             button10.MouseUp += new MouseEventHandler(buttons_Click);
             button11.MouseUp += new MouseEventHandler(buttons_Click);
             button12.MouseUp += new MouseEventHandler(buttons_Click);
-            button13.MouseUp += new MouseEventHandler(buttons_Click);
-            button14.MouseUp += new MouseEventHandler(buttons_Click);
-            button15.MouseUp += new MouseEventHandler(buttons_Click);
-            button16.MouseUp += new MouseEventHandler(buttons_Click);
 
         }
         private void buttons_Click(object sender, EventArgs e)
@@ -186,50 +182,6 @@ namespace copy2
                         }
                         con.Close();
                         break;
-                    case 13:
-                        con.Open();
-                        using (SQLiteCommand command = new SQLiteCommand(con))
-                        {
-                            command.CommandText =
-                                "SELECT info FROM botones WHERE id_boton='button13'";
-                            string copyText = Convert.ToString(command.ExecuteScalar());
-                            Clipboard.SetText(copyText);
-                        }
-                        con.Close();
-                        break;
-                    case 14:
-                        con.Open();
-                        using (SQLiteCommand command = new SQLiteCommand(con))
-                        {
-                            command.CommandText =
-                                "SELECT info FROM botones WHERE id_boton='button14'";
-                            string copyText = Convert.ToString(command.ExecuteScalar());
-                            Clipboard.SetText(copyText);
-                        }
-                        con.Close();
-                        break;
-                    case 15:
-                        con.Open();
-                        using (SQLiteCommand command = new SQLiteCommand(con))
-                        {
-                            command.CommandText =
-                                "SELECT info FROM botones WHERE id_boton='button15'";
-                            string copyText = Convert.ToString(command.ExecuteScalar());
-                            Clipboard.SetText(copyText);
-                        }
-                        con.Close();
-                        break;
-                    case 16:
-                        con.Open();
-                        using (SQLiteCommand command = new SQLiteCommand(con))
-                        {
-                            command.CommandText =
-                                "SELECT info FROM botones WHERE id_boton='button16'";
-                            string copyText = Convert.ToString(command.ExecuteScalar());
-                            Clipboard.SetText(copyText);
-                        }
-                        con.Close();
-                        break;
                 }
 
             }
@@ -371,50 +323,6 @@ namespace copy2
                     }
                     con.Close();
                     break;
-                case 13:
-                    con.Open();
-                    using (SQLiteCommand command = new SQLiteCommand(con))
-                    {
-                        command.CommandText =
-                            "SELECT info FROM botones WHERE id_boton='button13'";
-                        string copyText = Convert.ToString(command.ExecuteScalar());
-                        Clipboard.SetText(copyText);
-                    }
-                    con.Close();
-                    break;
-                case 14:
-                    con.Open();
-                    using (SQLiteCommand command = new SQLiteCommand(con))
-                    {
-                        command.CommandText =
-                            "SELECT info FROM botones WHERE id_boton='button14'";
-                        string copyText = Convert.ToString(command.ExecuteScalar());
-                        Clipboard.SetText(copyText);
-                    }
-                    con.Close();
-                    break;
-                case 15:
-                    con.Open();
-                    using (SQLiteCommand command = new SQLiteCommand(con))
-                    {
-                        command.CommandText =
-                            "SELECT info FROM botones WHERE id_boton='button15'";
-                        string copyText = Convert.ToString(command.ExecuteScalar());
-                        Clipboard.SetText(copyText);
-                    }
-                    con.Close();
-                    break;
-                case 16:
-                    con.Open();
-                    using (SQLiteCommand command = new SQLiteCommand(con))
-                    {
-                        command.CommandText =
-                            "SELECT info FROM botones WHERE id_boton='button16'";
-                        string copyText = Convert.ToString(command.ExecuteScalar());
-                        Clipboard.SetText(copyText);
-                    }
-                    con.Close();
-                    break;
             }
         }
         private void MenuItemEdit_Click(Object sender, System.EventArgs e)
@@ -534,21 +442,6 @@ namespace copy2
         private void button13_MouseUp(object sender, MouseEventArgs e)
         {
             Globales.num = 13;
-        }
-
-        private void button14_MouseUp(object sender, MouseEventArgs e)
-        {
-            Globales.num = 14;
-        }
-
-        private void button15_MouseUp(object sender, MouseEventArgs e)
-        {
-            Globales.num = 15;
-        }
-
-        private void button16_MouseUp(object sender, MouseEventArgs e)
-        {
-            Globales.num = 16;
         }
 
         private void button17_Click(object sender, EventArgs e)

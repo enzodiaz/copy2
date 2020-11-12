@@ -31,10 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -55,10 +51,6 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button16);
-            this.panel1.Controls.Add(this.button15);
-            this.panel1.Controls.Add(this.button14);
-            this.panel1.Controls.Add(this.button13);
             this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button10);
@@ -73,48 +65,8 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(470, 206);
+            this.panel1.Size = new System.Drawing.Size(470, 158);
             this.panel1.TabIndex = 0;
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(354, 157);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(111, 45);
-            this.button16.TabIndex = 15;
-            this.button16.Text = "button16";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button16_MouseUp);
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(237, 157);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(111, 45);
-            this.button15.TabIndex = 14;
-            this.button15.Text = "button15";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button15_MouseUp);
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(120, 156);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(111, 45);
-            this.button14.TabIndex = 13;
-            this.button14.Text = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button14_MouseUp);
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(3, 157);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(111, 45);
-            this.button13.TabIndex = 12;
-            this.button13.Text = "button13";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button13_MouseUp);
             // 
             // button12
             // 
@@ -279,10 +231,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
