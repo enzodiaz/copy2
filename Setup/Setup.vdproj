@@ -15,86 +15,86 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_05854161C5BB4FAF9E586BF338D7001A"
+        "MsmKey" = "8:_0B91CCCAA24444DA840CD875C887DE9D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_3FD7B3C5787140479F01F7E6CD312536"
+        "MsmKey" = "8:_3ECC2AC666244DF7B5A43E069E17A604"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4381907A224F48E8BA9019DACA9604A0"
+        "MsmKey" = "8:_41AD377D522A4DD087FEFE6D70798299"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4EBFAD97FEC94242903AF573CDFAF41F"
+        "MsmKey" = "8:_44803A70357C4AB08D32333B89702556"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_928BD543472C4E4CA32BD55C07216C12"
+        "MsmKey" = "8:_573EB303D0884A44B8F4AEC94BD52339"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_A7407738155741889DEB1BFCD9831EE6"
+        "MsmKey" = "8:_66B2BF4DDF7B467C9CD0E7A6C02B1D62"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_D5C7BD31AD7E41B38D4B3C6A84C5AB2A"
+        "MsmKey" = "8:_B0E43363683A453B9A5B099CE257D783"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E0376C3A5C4E41B4B33587E68BF1ACAF"
+        "MsmKey" = "8:_B3B9663DB2EB425587F714597C6C3126"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_E1544F3D21D4490EA45340C73DD3A7C1"
+        "MsmKey" = "8:_E6C6E3E878634C668D8484A5319F86A9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_EF5C495F5A3E9D43296FC2CC2F70C210"
-        "OwnerKey" = "8:_E1544F3D21D4490EA45340C73DD3A7C1"
+        "OwnerKey" = "8:_573EB303D0884A44B8F4AEC94BD52339"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F5A45DB257F84E739F75A8BED8F7435C"
+        "MsmKey" = "8:_F3D96C2012B74BD8A3DB19F56E6FA207"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F64E1375C016446BAD599C0861F2E183"
+        "MsmKey" = "8:_FC2E0BBFB4AF4CC38692BDD5571BA6B9"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F64E1375C016446BAD599C0861F2E183"
+        "OwnerKey" = "8:_B0E43363683A453B9A5B099CE257D783"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E1544F3D21D4490EA45340C73DD3A7C1"
+        "OwnerKey" = "8:_573EB303D0884A44B8F4AEC94BD52339"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -198,7 +198,27 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_05854161C5BB4FAF9E586BF338D7001A"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0B91CCCAA24444DA840CD875C887DE9D"
+            {
+            "SourcePath" = "8:..\\copy2\\bin\\Debug\\x64\\SQLite.Interop.dll"
+            "TargetName" = "8:SQLite.Interop.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_2BA07C8823B244B5A77188063D0F28D3"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3ECC2AC666244DF7B5A43E069E17A604"
             {
             "SourcePath" = "8:..\\copy2\\bin\\Debug\\remove-clipboard-interface-symbol_icon-icons.com_54463.ico"
             "TargetName" = "8:remove-clipboard-interface-symbol_icon-icons.com_54463.ico"
@@ -218,107 +238,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3FD7B3C5787140479F01F7E6CD312536"
-            {
-            "SourcePath" = "8:..\\copy2\\bin\\Debug\\copy2.pdb"
-            "TargetName" = "8:copy2.pdb"
-            "Tag" = "8:"
-            "Folder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4381907A224F48E8BA9019DACA9604A0"
-            {
-            "SourcePath" = "8:..\\copy2\\bin\\Debug\\copy.sqlite"
-            "TargetName" = "8:copy.sqlite"
-            "Tag" = "8:"
-            "Folder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4EBFAD97FEC94242903AF573CDFAF41F"
-            {
-            "SourcePath" = "8:..\\copy2\\bin\\Debug\\System.Data.SQLite.xml"
-            "TargetName" = "8:System.Data.SQLite.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_928BD543472C4E4CA32BD55C07216C12"
-            {
-            "SourcePath" = "8:..\\copy2\\bin\\Debug\\x64\\SQLite.Interop.dll"
-            "TargetName" = "8:SQLite.Interop.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_0E2FDCA359964E9993BBB28CD6A1EA06"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A7407738155741889DEB1BFCD9831EE6"
-            {
-            "SourcePath" = "8:..\\copy2\\bin\\Debug\\1486504829-clipboard-tasks-report-business-checking-verification-list_81387.ico"
-            "TargetName" = "8:1486504829-clipboard-tasks-report-business-checking-verification-list_81387.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D5C7BD31AD7E41B38D4B3C6A84C5AB2A"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_41AD377D522A4DD087FEFE6D70798299"
             {
             "SourcePath" = "8:..\\copy2\\bin\\Debug\\copy2.exe.config"
             "TargetName" = "8:copy2.exe.config"
@@ -338,7 +258,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E0376C3A5C4E41B4B33587E68BF1ACAF"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_44803A70357C4AB08D32333B89702556"
             {
             "SourcePath" = "8:..\\copy2\\bin\\Debug\\datos.db"
             "TargetName" = "8:datos.db"
@@ -358,14 +278,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E1544F3D21D4490EA45340C73DD3A7C1"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_573EB303D0884A44B8F4AEC94BD52339"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:copy2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E1544F3D21D4490EA45340C73DD3A7C1"
+                    "_573EB303D0884A44B8F4AEC94BD52339"
                     {
                     "Name" = "8:copy2.exe"
                     "Attributes" = "3:512"
@@ -375,6 +295,97 @@
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_66B2BF4DDF7B467C9CD0E7A6C02B1D62"
+            {
+            "SourcePath" = "8:..\\copy2\\bin\\Debug\\System.Data.SQLite.xml"
+            "TargetName" = "8:System.Data.SQLite.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B0E43363683A453B9A5B099CE257D783"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_B0E43363683A453B9A5B099CE257D783"
+                    {
+                    "Name" = "8:System.Data.SQLite.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\copy2\\bin\\Debug\\System.Data.SQLite.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B3B9663DB2EB425587F714597C6C3126"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\Desktop\\copy.sqlite"
+            "TargetName" = "8:copy.sqlite"
+            "Tag" = "8:"
+            "Folder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E6C6E3E878634C668D8484A5319F86A9"
+            {
+            "SourcePath" = "8:..\\copy2\\bin\\Debug\\x86\\SQLite.Interop.dll"
+            "TargetName" = "8:SQLite.Interop.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_E214253EF93140D3A98A25857CBA57C8"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -420,12 +431,12 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F5A45DB257F84E739F75A8BED8F7435C"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F3D96C2012B74BD8A3DB19F56E6FA207"
             {
-            "SourcePath" = "8:..\\copy2\\bin\\Debug\\x86\\SQLite.Interop.dll"
-            "TargetName" = "8:SQLite.Interop.dll"
+            "SourcePath" = "8:..\\copy2\\bin\\Debug\\copy2.pdb"
+            "TargetName" = "8:copy2.pdb"
             "Tag" = "8:"
-            "Folder" = "8:_D79E50B246754765A89BC8246704888C"
+            "Folder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -440,21 +451,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F64E1375C016446BAD599C0861F2E183"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FC2E0BBFB4AF4CC38692BDD5571BA6B9"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_F64E1375C016446BAD599C0861F2E183"
-                    {
-                    "Name" = "8:System.Data.SQLite.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\copy2\\bin\\Debug\\System.Data.SQLite.dll"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\copy2\\bin\\Debug\\1486504829-clipboard-tasks-report-business-checking-verification-list_81387.ico"
+            "TargetName" = "8:1486504829-clipboard-tasks-report-business-checking-verification-list_81387.ico"
             "Tag" = "8:"
             "Folder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
             "Condition" = "8:"
@@ -520,24 +520,24 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_0E2FDCA359964E9993BBB28CD6A1EA06"
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_2BA07C8823B244B5A77188063D0F28D3"
                     {
                     "Name" = "8:x64"
                     "AlwaysCreate" = "11:FALSE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
-                    "Property" = "8:_2F0109E377324D199A325B5B05B4334F"
+                    "Property" = "8:_5BAC6BC1CF9648FCBAF7124F1A9852AE"
                         "Folders"
                         {
                         }
                     }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_D79E50B246754765A89BC8246704888C"
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_E214253EF93140D3A98A25857CBA57C8"
                     {
                     "Name" = "8:x86"
                     "AlwaysCreate" = "11:FALSE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
-                    "Property" = "8:_E6A7714893F5417BBAB283559237B406"
+                    "Property" = "8:_75A9AA67BCDC48C097C3930319090CC9"
                         "Folders"
                         {
                         }
@@ -578,7 +578,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_05854161C5BB4FAF9E586BF338D7001A"
+        "ARPPRODUCTICON" = "8:_3ECC2AC666244DF7B5A43E069E17A604"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -681,7 +681,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_23F2A28251824B4DA9091867F029852E"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_0FF8AFBF6E614EF397390FFC0FEF37ED"
             {
             "Name" = "8:CopyApp.exe"
             "Arguments" = "8:"
@@ -689,13 +689,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_E1544F3D21D4490EA45340C73DD3A7C1"
+            "Target" = "8:_573EB303D0884A44B8F4AEC94BD52339"
             "Folder" = "8:_80F26EC736B140998E0A3BC32EEAB9C1"
             "WorkingFolder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
-            "Icon" = "8:_A7407738155741889DEB1BFCD9831EE6"
+            "Icon" = "8:_FC2E0BBFB4AF4CC38692BDD5571BA6B9"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_855BACCDEB9B49F3983245B504F36FD3"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B58789024C9B4EDAB1DEC476BF0D3F96"
             {
             "Name" = "8:CopyApp.exe"
             "Arguments" = "8:"
@@ -703,10 +703,10 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_E1544F3D21D4490EA45340C73DD3A7C1"
+            "Target" = "8:_573EB303D0884A44B8F4AEC94BD52339"
             "Folder" = "8:_D9D459726E0D424EAF19A19F9824756D"
             "WorkingFolder" = "8:_ACBE07E601144A338F09EBF1D8645AE6"
-            "Icon" = "8:_A7407738155741889DEB1BFCD9831EE6"
+            "Icon" = "8:_FC2E0BBFB4AF4CC38692BDD5571BA6B9"
             "Feature" = "8:"
             }
         }

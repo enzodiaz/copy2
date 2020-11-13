@@ -210,13 +210,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 353);
+            this.ClientSize = new System.Drawing.Size(661, 241);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.MaximumSize = new System.Drawing.Size(677, 392);
-            this.MinimumSize = new System.Drawing.Size(677, 392);
+            this.MaximumSize = new System.Drawing.Size(677, 280);
+            this.MinimumSize = new System.Drawing.Size(677, 280);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CopyApp";
