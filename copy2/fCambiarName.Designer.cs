@@ -55,6 +55,7 @@
             // 
             // button1
             // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button1.Location = new System.Drawing.Point(29, 100);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 35);
@@ -89,8 +90,6 @@
             this.Name = "fCambiarName";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cambiar nombre";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fCambiarName_FormClosing);
-            this.Load += new System.EventHandler(this.fCambiarName_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

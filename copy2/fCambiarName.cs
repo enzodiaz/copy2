@@ -20,7 +20,7 @@ namespace copy2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            button1.DialogResult = DialogResult.OK;
             SQLiteConnection con = new SQLiteConnection("Data source = copy.sqlite");
             Form1 f1 = new Form1();
             switch (Globales.num)
@@ -33,10 +33,10 @@ namespace copy2
                             "UPDATE botones SET titulo =:text WHERE id_boton = 'button1' ";
                         command.Parameters.Add("text", DbType.String).Value = textBox1.Text;
                         command.ExecuteNonQuery();
-                        f1.Show();
-                        this.Hide();
+                        
                     }
                     con.Close();
+                    this.Close();
                     break;
 
                 case 2:
@@ -49,8 +49,7 @@ namespace copy2
                         command.ExecuteNonQuery();
                     }
                     con.Close();
-                    f1.Show();
-                    this.Hide();
+                    this.Close();
                     break;
 
                 case 3:
@@ -63,8 +62,7 @@ namespace copy2
                         command.ExecuteNonQuery();
                     }
                     con.Close();
-                    f1.Show();
-                    this.Hide();
+                    this.Close();
                     break;
 
                 case 4:
@@ -77,8 +75,7 @@ namespace copy2
                         command.ExecuteNonQuery();
                     }
                     con.Close();
-                    f1.Show();
-                    this.Hide();
+                    this.Close();
                     break;
 
                 case 5:
@@ -91,8 +88,7 @@ namespace copy2
                         command.ExecuteNonQuery();
                     }
                     con.Close();
-                    f1.Show();
-                    this.Hide();
+                    this.Close();
                     break;
 
                 case 6:
@@ -105,8 +101,7 @@ namespace copy2
                         command.ExecuteNonQuery();
                     }
                     con.Close();
-                    f1.Show();
-                    this.Hide();
+                    this.Close();
                     break;
 
                 case 7:
@@ -119,8 +114,7 @@ namespace copy2
                         command.ExecuteNonQuery();
                     }
                     con.Close();
-                    f1.Show();
-                    this.Hide();
+                    this.Close();
                     break;
 
                 case 8:
@@ -133,8 +127,7 @@ namespace copy2
                         command.ExecuteNonQuery();
                     }
                     con.Close();
-                    f1.Show();
-                    this.Hide();
+                    this.Close();
                     break;
 
                 case 9:
@@ -147,8 +140,7 @@ namespace copy2
                         command.ExecuteNonQuery();
                     }
                     con.Close();
-                    f1.Show();
-                    this.Hide();
+                    this.Close();
                     break;
 
                 case 10:
@@ -161,8 +153,7 @@ namespace copy2
                         command.ExecuteNonQuery();
                     }
                     con.Close();
-                    f1.Show();
-                    this.Hide();
+                    this.Close();
                     break;
 
                 case 11:
@@ -175,8 +166,7 @@ namespace copy2
                         command.ExecuteNonQuery();
                     }
                     con.Close();
-                    f1.Show();
-                    this.Hide();
+                    this.Close();
                     break;
 
                 case 12:
@@ -189,84 +179,14 @@ namespace copy2
                         command.ExecuteNonQuery();
                     }
                     con.Close();
-                    f1.Show();
-                    this.Hide();
-                    break;
-
-                case 13:
-                    con.Open();
-                    using (SQLiteCommand command = new SQLiteCommand(con))
-                    {
-                        command.CommandText =
-                            "UPDATE botones SET titulo =:text WHERE id_boton = 'button13'";
-                        command.Parameters.Add("text", DbType.String).Value = textBox1.Text;
-                        command.ExecuteNonQuery();
-                    }
-                    con.Close();
-                    f1.Show();
-                    this.Hide();
-                    break;
-
-                case 14:
-                    con.Open();
-                    using (SQLiteCommand command = new SQLiteCommand(con))
-                    {
-                        command.CommandText =
-                            "UPDATE botones SET titulo =:text WHERE id_boton = 'button14'";
-                        command.Parameters.Add("text", DbType.String).Value = textBox1.Text;
-                        command.ExecuteNonQuery();
-                    }
-                    con.Close();
-                    f1.Show();
-                    this.Hide();
-                    break;
-
-                case 15:
-                    con.Open();
-                    using (SQLiteCommand command = new SQLiteCommand(con))
-                    {
-                        command.CommandText =
-                            "UPDATE botones SET titulo =:text WHERE id_boton = 'button15'";
-                        command.Parameters.Add("text", DbType.String).Value = textBox1.Text;
-                        command.ExecuteNonQuery();
-                    }
-                    con.Close();
-                    f1.Show();
-                    this.Hide();
-                    break;
-
-                case 16:
-                    con.Open();
-                    using (SQLiteCommand command = new SQLiteCommand(con))
-                    {
-                        command.CommandText =
-                            "UPDATE botones SET titulo =:text WHERE id_boton = 'button16'";
-                        command.Parameters.Add("text", DbType.String).Value = textBox1.Text;
-                        command.ExecuteNonQuery();
-                    }
-                    con.Close();
-                    f1.Show();
-                    this.Hide();
+                    this.Close();
                     break;
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
             this.Close();
-            f1.Show();
-        }
-
-        private void fCambiarName_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fCambiarName_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Form1 f1 = new Form1();
-            f1.Show();
         }
     }
 }

@@ -242,9 +242,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        public System.Windows.Forms.Button button1;
     }
 }
-

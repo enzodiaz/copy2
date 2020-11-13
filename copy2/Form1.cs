@@ -13,14 +13,14 @@ using System.Windows.Forms;
 
 namespace copy2
 {
-    
+
     public partial class Form1 : Form
     {
-        
+
         public Form1()
         {
             InitializeComponent();
-            
+
             button1.MouseUp += new MouseEventHandler(buttons_Click);
             button2.MouseUp += new MouseEventHandler(buttons_Click);
             button3.MouseUp += new MouseEventHandler(buttons_Click);
@@ -328,17 +328,38 @@ namespace copy2
         private void MenuItemEdit_Click(Object sender, System.EventArgs e)
         {
             fEditar fe = new fEditar();
-            this.Hide();
-            fe.Show();
-
+            fe.ShowDialog();
         }
+
         private void MenuItemChangeName_Click(Object sender, System.EventArgs e)
         {
             fCambiarName cn = new fCambiarName();
-            this.Hide();
-            cn.Show();
-        }
+            if (cn.ShowDialog() == DialogResult.OK)
+            {
+                List<Control> list = new List<Control>();
 
+                GetAllControl(this, list);
+                foreach (Control control in list)
+                {
+                    if (control.GetType() == typeof(Button))
+                    {
+                        SQLiteConnection con = new SQLiteConnection("Data source = copy.sqlite");
+                        con.Open();
+                        using (SQLiteCommand command = new SQLiteCommand(con))
+                        {
+                            command.CommandText =
+                                "SELECT titulo FROM botones WHERE id_boton=:id";
+                            command.Parameters.Add("id", DbType.String).Value = control.Name;
+                            string tituloTempo = Convert.ToString(command.ExecuteScalar());
+                            control.Text = tituloTempo;
+                        }
+                        con.Close();
+                    }
+                }
+                button17.Text = "Salir";
+            }
+
+        }
         private void GetAllControl(Control c, List<Control> list)
         {
             foreach (Control control in c.Controls)
@@ -354,14 +375,12 @@ namespace copy2
         private void Form1_Load(object sender, EventArgs e)
         {
             List<Control> list = new List<Control>();
-
+           
             GetAllControl(this, list);
-            int i = 17;
             foreach (Control control in list)
             {
                 if (control.GetType() == typeof(Button))
                 {
-                    i--;
                     SQLiteConnection con = new SQLiteConnection("Data source = copy.sqlite");
                     con.Open();
                     using (SQLiteCommand command = new SQLiteCommand(con))
@@ -377,6 +396,7 @@ namespace copy2
             }
             Globales.num = 0;
             button17.Text = "Salir";
+            
         }
 
         private void button1_MouseUp(object sender, EventArgs e)
@@ -439,11 +459,6 @@ namespace copy2
             Globales.num = 12;
         }
 
-        private void button13_MouseUp(object sender, MouseEventArgs e)
-        {
-            Globales.num = 13;
-        }
-
         private void button17_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -466,9 +481,9 @@ namespace copy2
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
 
-                Show();
-                this.WindowState = FormWindowState.Normal;
-                notifyIcon1.Visible = false;
+            Show();
+            this.WindowState = FormWindowState.Normal;
+            notifyIcon1.Visible = false;
         }
 
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
@@ -482,6 +497,7 @@ namespace copy2
             Show();
             this.WindowState = FormWindowState.Normal;
             notifyIcon1.Visible = false;
+            
         }
         void niExit_Click(object sender, EventArgs e)
         {
@@ -550,6 +566,11 @@ namespace copy2
                 Globales.num = 12;
                 buttons_Bind();
             }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            
         }
     }
     static class Globales
