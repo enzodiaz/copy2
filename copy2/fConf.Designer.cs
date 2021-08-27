@@ -75,6 +75,7 @@ namespace copy2
             // 
             // cmdAceptar
             // 
+            this.cmdAceptar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.cmdAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdAceptar.Location = new System.Drawing.Point(248, 360);
             this.cmdAceptar.Name = "cmdAceptar";
@@ -97,6 +98,7 @@ namespace copy2
             // 
             // cmdSalir
             // 
+            this.cmdSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cmdSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdSalir.Location = new System.Drawing.Point(130, 360);
             this.cmdSalir.Name = "cmdSalir";

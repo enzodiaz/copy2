@@ -44,7 +44,29 @@ namespace copy2
                 m.MenuItems.Add(new MenuItem("Cambiar nombre", MenuItemChangeName_Click));
                 m.Show(this, this.PointToClient(Cursor.Position));*/
                 frmConf frmc = new frmConf();
-                frmc.ShowDialog();
+                if (frmc.ShowDialog() == DialogResult.OK)
+                {
+                    List<Control> list = new List<Control>();
+
+                    GetAllControl(this, list);
+                    foreach (Control control in list)
+                    {
+                        if (control.GetType() == typeof(Button))
+                        {
+                            con.Open();
+                            using (SQLiteCommand command = new SQLiteCommand(con))
+                            {
+                                command.CommandText =
+                                    "SELECT titulo FROM botones WHERE id_boton=:id";
+                                command.Parameters.Add("id", DbType.String).Value = control.Name;
+                                string tituloTempo = Convert.ToString(command.ExecuteScalar());
+                                control.Text = tituloTempo;
+                            }
+                            con.Close();
+                        }
+                    }
+                    button17.Text = "Salir";
+                }
             }
             else
             {
@@ -372,8 +394,33 @@ namespace copy2
             }
         }
 
+        public void llenarBotones()
+        {
+            List<Control> list = new List<Control>();
 
-        private void Form1_Load(object sender, EventArgs e)
+            GetAllControl(this, list);
+            foreach (Control control in list)
+            {
+                if (control.GetType() == typeof(Button))
+                {
+                    SQLiteConnection con = new SQLiteConnection("Data source = copy.sqlite");
+                    con.Open();
+                    using (SQLiteCommand command = new SQLiteCommand(con))
+                    {
+                        command.CommandText =
+                            "SELECT titulo FROM botones WHERE id_boton=:id";
+                        command.Parameters.Add("id", DbType.String).Value = control.Name;
+
+                        string tituloTempo = Convert.ToString(command.ExecuteScalar());
+                        control.Text = tituloTempo;
+                        control.Refresh();
+                    }
+                    con.Close();
+                }
+            }
+        }
+
+        public void Form1_Load(object sender, EventArgs e)
         {
             List<Control> list = new List<Control>();
            

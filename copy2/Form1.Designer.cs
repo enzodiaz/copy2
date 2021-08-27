@@ -244,7 +244,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
@@ -258,5 +257,6 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         public System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button17;
+        public System.Windows.Forms.Button button12;
     }
 }
