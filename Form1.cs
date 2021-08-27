@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net;
+using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
+using System.Drawing;
+using System.Linq;
+using System.Text;
 using System.Data.SQLite;
-using Microsoft.IdentityModel.Tokens;
-using System.IO;
+using System.Data.SqlClient;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace copy2
@@ -12,7 +16,6 @@ namespace copy2
 
     public partial class Form1 : Form
     {
-        public WebResponse response { get; private set; }
 
         public Form1()
         {
@@ -34,17 +37,14 @@ namespace copy2
         }
         private void buttons_Click(object sender, EventArgs e)
         {
-
             SQLiteConnection con = new SQLiteConnection("Data Source=copy.sqlite;Version = 3; Cache = Shared");
             MouseEventArgs me = (MouseEventArgs)e;
             if (me.Button == System.Windows.Forms.MouseButtons.Right)
             {
-                /*ContextMenu m = new ContextMenu();
+                ContextMenu m = new ContextMenu();
                 m.MenuItems.Add(new MenuItem("Editar", MenuItemEdit_Click));
                 m.MenuItems.Add(new MenuItem("Cambiar nombre", MenuItemChangeName_Click));
-                m.Show(this, this.PointToClient(Cursor.Position));*/
-                frmConf frmc = new frmConf();
-                frmc.ShowDialog();
+                m.Show(this, this.PointToClient(Cursor.Position));
             }
             else
             {
@@ -60,7 +60,6 @@ namespace copy2
                             Clipboard.SetText(copyText);
                         }
                         con.Close();
-
                         break;
                     case 2:
                         con.Open();
@@ -389,7 +388,6 @@ namespace copy2
                         command.CommandText =
                             "SELECT titulo FROM botones WHERE id_boton=:id";
                         command.Parameters.Add("id", DbType.String).Value = control.Name;
-                        
                         string tituloTempo = Convert.ToString(command.ExecuteScalar());
                         control.Text = tituloTempo;
                     }
@@ -568,6 +566,11 @@ namespace copy2
                 Globales.num = 12;
                 buttons_Bind();
             }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            
         }
     }
     static class Globales
