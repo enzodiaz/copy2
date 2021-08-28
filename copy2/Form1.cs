@@ -13,7 +13,6 @@ namespace copy2
 
     public partial class Form1 : Form
     {
-        public WebResponse response { get; private set; }
         public int cont;
         public Form1()
         {
@@ -596,7 +595,11 @@ namespace copy2
 
         private void botonPer4_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult dialogResult = MessageBox.Show("¿Estás seguro que desea salir?", "CopyApp", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void botonPer1_Click(object sender, EventArgs e)
@@ -607,6 +610,11 @@ namespace copy2
                 Hide();
                 notifyIcon1.Visible = true;
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
     static class Globales
