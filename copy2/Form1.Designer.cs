@@ -47,8 +47,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.botonPer1 = new copy2.botonPer();
+            this.botonPer4 = new copy2.botonPer();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.msgbox.SuspendLayout();
@@ -289,8 +289,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.panel2.Controls.Add(this.button14);
-            this.panel2.Controls.Add(this.button13);
+            this.panel2.Controls.Add(this.botonPer1);
+            this.panel2.Controls.Add(this.botonPer4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -300,40 +300,41 @@
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
             this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
             // 
-            // button14
+            // botonPer1
             // 
-            this.button14.BackColor = System.Drawing.Color.Transparent;
-            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Location = new System.Drawing.Point(622, -8);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(33, 34);
-            this.button14.TabIndex = 1;
-            this.button14.Text = "_";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.botonPer1.BackColor = System.Drawing.Color.Transparent;
+            this.botonPer1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.botonPer1.FlatAppearance.BorderSize = 0;
+            this.botonPer1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.botonPer1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.botonPer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonPer1.ForeColor = System.Drawing.Color.White;
+            this.botonPer1.Location = new System.Drawing.Point(610, -12);
+            this.botonPer1.Name = "botonPer1";
+            this.botonPer1.Size = new System.Drawing.Size(29, 35);
+            this.botonPer1.TabIndex = 6;
+            this.botonPer1.Text = "_";
+            this.botonPer1.UseVisualStyleBackColor = true;
+            this.botonPer1.Click += new System.EventHandler(this.botonPer1_Click);
             // 
-            // button13
+            // botonPer4
             // 
-            this.button13.BackColor = System.Drawing.Color.Transparent;
-            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(650, 3);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(28, 23);
-            this.button13.TabIndex = 0;
-            this.button13.Text = "X";
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.botonPer4.BackColor = System.Drawing.Color.Transparent;
+            this.botonPer4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.botonPer4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.botonPer4.FlatAppearance.BorderSize = 0;
+            this.botonPer4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.botonPer4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.botonPer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonPer4.ForeColor = System.Drawing.Color.White;
+            this.botonPer4.Location = new System.Drawing.Point(645, 0);
+            this.botonPer4.Name = "botonPer4";
+            this.botonPer4.Size = new System.Drawing.Size(32, 26);
+            this.botonPer4.TabIndex = 5;
+            this.botonPer4.Text = "X";
+            this.botonPer4.UseVisualStyleBackColor = true;
+            this.botonPer4.Click += new System.EventHandler(this.botonPer4_Click);
             // 
             // timer1
             // 
@@ -386,9 +387,9 @@
         public System.Windows.Forms.Button button12;
         private System.Windows.Forms.Panel msgbox;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private botonPer botonPer1;
+        private botonPer botonPer4;
     }
 }

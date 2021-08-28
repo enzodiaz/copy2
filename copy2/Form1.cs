@@ -385,8 +385,6 @@ namespace copy2
                 }
             }
             Globales.num = 0;
-            button13.Text = "X";
-            button14.Text = "_";
         }
 
         private void button1_MouseUp(object sender, EventArgs e)
@@ -558,21 +556,6 @@ namespace copy2
             }
         }
 
-        private void button13_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-             if (this.WindowState == FormWindowState.Minimized)
-            {
-                Hide();
-                notifyIcon1.Visible = true;
-            }
-        }
         private bool arr;
         private int mouseX;
         private int mouseY;
@@ -608,6 +591,21 @@ namespace copy2
                 msgbox.Visible = false;
                 timer1.Enabled = false;
                 cont = 0;
+            }
+        }
+
+        private void botonPer4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void botonPer1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                Hide();
+                notifyIcon1.Visible = true;
             }
         }
     }

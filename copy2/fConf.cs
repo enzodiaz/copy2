@@ -22,7 +22,7 @@ namespace copy2
         {
             SQLiteConnection con = new SQLiteConnection("Data source = copy.sqlite" +
                 "");
-            string sel = "SELECT info,titulo FROM botones WHERE id_boton= ";
+            string sel = "SELECT info,titulo FROM botones WHERE id_boton IS NOT NULL AND id_boton= ";
             Form1 f1 = new Form1();
             switch (Globales.num)
             {
@@ -388,6 +388,40 @@ namespace copy2
             {
                 MessageBox.Show("Debe completar el campo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private bool arr;
+        private int mouseX;
+        private int mouseY;
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            arr = true;
+            mouseX = Cursor.Position.X - this.Left;
+            mouseY = Cursor.Position.Y - this.Top;
+        }
+
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                if (arr)
+                {
+                    this.Top = Cursor.Position.Y - mouseY;
+                    this.Left = Cursor.Position.X - mouseX;
+                }
+
+            }
+        }
+
+        private void panel2_MouseUp(object sender, MouseEventArgs e)
+        {
+            arr = false;
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
