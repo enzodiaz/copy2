@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Data;
+using System.Drawing;
 using System.Data.SQLite;
 using Microsoft.IdentityModel.Tokens;
 using System.IO;
@@ -13,7 +14,7 @@ namespace copy2
     public partial class Form1 : Form
     {
         public WebResponse response { get; private set; }
-
+        public int cont;
         public Form1()
         {
             InitializeComponent();
@@ -65,7 +66,6 @@ namespace copy2
                             con.Close();
                         }
                     }
-                    button17.Text = "Salir";
                 }
             }
             else
@@ -82,7 +82,6 @@ namespace copy2
                             Clipboard.SetText(copyText);
                         }
                         con.Close();
-
                         break;
                     case 2:
                         con.Open();
@@ -206,7 +205,8 @@ namespace copy2
                         con.Close();
                         break;
                 }
-
+                msgbox.Visible = true;
+                timer1.Enabled = true;
             }
         }
         private void buttons_Bind()
@@ -348,41 +348,8 @@ namespace copy2
                     break;
             }
         }
-        private void MenuItemEdit_Click(Object sender, System.EventArgs e)
-        {
-            fEditar fe = new fEditar();
-            fe.ShowDialog();
-        }
 
-        private void MenuItemChangeName_Click(Object sender, System.EventArgs e)
-        {
-            fCambiarName cn = new fCambiarName();
-            if (cn.ShowDialog() == DialogResult.OK)
-            {
-                List<Control> list = new List<Control>();
-
-                GetAllControl(this, list);
-                foreach (Control control in list)
-                {
-                    if (control.GetType() == typeof(Button))
-                    {
-                        SQLiteConnection con = new SQLiteConnection("Data source = copy.sqlite");
-                        con.Open();
-                        using (SQLiteCommand command = new SQLiteCommand(con))
-                        {
-                            command.CommandText =
-                                "SELECT titulo FROM botones WHERE id_boton=:id";
-                            command.Parameters.Add("id", DbType.String).Value = control.Name;
-                            string tituloTempo = Convert.ToString(command.ExecuteScalar());
-                            control.Text = tituloTempo;
-                        }
-                        con.Close();
-                    }
-                }
-                button17.Text = "Salir";
-            }
-
-        }
+      
         private void GetAllControl(Control c, List<Control> list)
         {
             foreach (Control control in c.Controls)
@@ -391,32 +358,6 @@ namespace copy2
 
                 if (control.GetType() == typeof(Panel))
                     GetAllControl(control, list);
-            }
-        }
-
-        public void llenarBotones()
-        {
-            List<Control> list = new List<Control>();
-
-            GetAllControl(this, list);
-            foreach (Control control in list)
-            {
-                if (control.GetType() == typeof(Button))
-                {
-                    SQLiteConnection con = new SQLiteConnection("Data source = copy.sqlite");
-                    con.Open();
-                    using (SQLiteCommand command = new SQLiteCommand(con))
-                    {
-                        command.CommandText =
-                            "SELECT titulo FROM botones WHERE id_boton=:id";
-                        command.Parameters.Add("id", DbType.String).Value = control.Name;
-
-                        string tituloTempo = Convert.ToString(command.ExecuteScalar());
-                        control.Text = tituloTempo;
-                        control.Refresh();
-                    }
-                    con.Close();
-                }
             }
         }
 
@@ -444,8 +385,8 @@ namespace copy2
                 }
             }
             Globales.num = 0;
-            button17.Text = "Salir";
-            
+            button13.Text = "X";
+            button14.Text = "_";
         }
 
         private void button1_MouseUp(object sender, EventArgs e)
@@ -614,6 +555,59 @@ namespace copy2
             {
                 Globales.num = 12;
                 buttons_Bind();
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+             if (this.WindowState == FormWindowState.Minimized)
+            {
+                Hide();
+                notifyIcon1.Visible = true;
+            }
+        }
+        private bool arr;
+        private int mouseX;
+        private int mouseY;
+
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                if (arr) {
+                    this.Top = Cursor.Position.Y - mouseY;
+                    this.Left = Cursor.Position.X - mouseX;
+                }
+                
+            }
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            arr = true;
+            mouseX = Cursor.Position.X - this.Left;
+            mouseY = Cursor.Position.Y - this.Top;
+        }
+
+        private void panel2_MouseUp(object sender, MouseEventArgs e)
+        {
+            arr = false;
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            cont++;
+            if (cont == 150)
+            {
+                msgbox.Visible = false;
+                timer1.Enabled = false;
+                cont = 0;
             }
         }
     }
