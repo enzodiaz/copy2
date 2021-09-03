@@ -47,12 +47,19 @@
             this.button1 = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.botonPer1 = new copy2.botonPer();
             this.botonPer4 = new copy2.botonPer();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.stripCopy = new System.Windows.Forms.ToolStripMenuItem();
+            this.configuracionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.save = new System.Windows.Forms.SaveFileDialog();
             this.panel1.SuspendLayout();
             this.msgbox.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,7 +79,7 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(12, 32);
+            this.panel1.Location = new System.Drawing.Point(24, 45);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(472, 159);
             this.panel1.TabIndex = 0;
@@ -82,7 +89,7 @@
             this.msgbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(138)))), ((int)(((byte)(145)))));
             this.msgbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.msgbox.Controls.Add(this.label1);
-            this.msgbox.Location = new System.Drawing.Point(254, 76);
+            this.msgbox.Location = new System.Drawing.Point(237, 65);
             this.msgbox.Name = "msgbox";
             this.msgbox.Size = new System.Drawing.Size(177, 35);
             this.msgbox.TabIndex = 2;
@@ -292,6 +299,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.panel2.Controls.Add(this.botonPer1);
             this.panel2.Controls.Add(this.botonPer4);
+            this.panel2.Controls.Add(this.menuStrip1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -300,11 +308,6 @@
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseMove);
             this.panel2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseUp);
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // botonPer1
             // 
@@ -342,6 +345,67 @@
             this.botonPer4.UseVisualStyleBackColor = true;
             this.botonPer4.Click += new System.EventHandler(this.botonPer4_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(192)))), ((int)(((byte)(207)))));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stripCopy});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(197, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // stripCopy
+            // 
+            this.stripCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.stripCopy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.stripCopy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.stripCopy.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.configuracionToolStripMenuItem1,
+            this.aboutToolStripMenuItem,
+            this.salirToolStripMenuItem1});
+            this.stripCopy.ImageTransparentColor = System.Drawing.Color.Honeydew;
+            this.stripCopy.Name = "stripCopy";
+            this.stripCopy.Size = new System.Drawing.Size(69, 20);
+            this.stripCopy.Text = "CopyApp";
+            this.stripCopy.MouseHover += new System.EventHandler(this.stripCopy_MouseHover);
+            // 
+            // configuracionToolStripMenuItem1
+            // 
+            this.configuracionToolStripMenuItem1.Name = "configuracionToolStripMenuItem1";
+            this.configuracionToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.configuracionToolStripMenuItem1.Text = "&Configuracion";
+            this.configuracionToolStripMenuItem1.Click += new System.EventHandler(this.configuracionToolStripMenuItem1_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "&About";
+            // 
+            // salirToolStripMenuItem1
+            // 
+            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem1.Text = "&Salir";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // save
+            // 
+            this.save.CheckFileExists = true;
+            this.save.DefaultExt = "sqlite";
+            this.save.FileName = "copy";
+            this.save.Filter = "Archivo SQLite|*.sqlite";
+            this.save.RestoreDirectory = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,6 +418,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(677, 280);
             this.MinimumSize = new System.Drawing.Size(677, 280);
             this.Name = "Form1";
@@ -366,6 +431,9 @@
             this.msgbox.ResumeLayout(false);
             this.msgbox.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -383,8 +451,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        public System.Windows.Forms.Button button1;
         public System.Windows.Forms.Button button12;
         private System.Windows.Forms.Panel msgbox;
         private System.Windows.Forms.Panel panel2;
@@ -392,5 +460,11 @@
         private System.Windows.Forms.Timer timer1;
         private botonPer botonPer1;
         private botonPer botonPer4;
+        private System.Windows.Forms.SaveFileDialog save;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem stripCopy;
+        private System.Windows.Forms.ToolStripMenuItem configuracionToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
     }
 }

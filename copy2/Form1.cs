@@ -362,6 +362,9 @@ namespace copy2
 
         public void Form1_Load(object sender, EventArgs e)
         {
+            string dir = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+            dir = dir.Replace('\\','\\');
+            save.InitialDirectory = dir;
             List<Control> list = new List<Control>();
            
             GetAllControl(this, list);
@@ -615,6 +618,35 @@ namespace copy2
         private void button4_Click(object sender, EventArgs e)
         {
 
+        }
+        string dir = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+        private void botonPer2_Click(object sender, EventArgs e)
+        {
+
+            save.Title = "Guardar base de datos de botones";
+            save.ShowDialog();
+            if (save.FileName != "")
+            {
+                System.IO.FileStream fs =
+                    (System.IO.FileStream)save.OpenFile();
+                if (Path.GetExtension(save.FileName) != "sqlite")
+                {
+                    MessageBox.Show("Debe seleccionar un archivo .sqlite");
+                }
+
+                fs.Close();
+            }
+        }
+
+        private void stripCopy_MouseHover(object sender, EventArgs e)
+        {
+            stripCopy.BackColor = Color.FromArgb(32, 34, 37);
+        }
+
+        private void configuracionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmConfigurApp f2 = new frmConfigurApp();
+            f2.ShowDialog();
         }
     }
     static class Globales
